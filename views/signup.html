@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    
+    <link href="signup.css"  rel="stylesheet"type="text/css"/>
+    <script src="signup.js"></script>
+</head>
+<body>
+    <div class="back">
+        <ul class="nav-list"> 
+            <li id="l1"><a  href="/home">Home</a></li>
+            <li id="l2"><a  href="/login">Login</a></li> 
+        </ul>
+
+    <div  class="login-form">
+    <h1>SIGNUP</h1>
+    <form name="forms" id="forms" method="post" action="/register" >
+      
+        <p>UserName:</p>    
+        <input type="text" id="username" name="username"placeholder="UserName"><span><h4 id="demo"></h4></span>
+
+       
+        <p>Email:</p>    
+        <input type="text" id="email"name="email"placeholder="Email"><span><h4 id="demo2"></h4></span>
+        
+        
+        <p>Password:</p>
+        <input type="password"id="password" name="password"placeholder="Password"><span><h4 id="demo1"></h4></span>
+
+        
+        
+        <p><button class="bs" type="submit">Signup</button></p><span style="font-size:18px">Already registered? <a href="/login">Login here </a></span>
+        <div id="message"></div>
+        
+    
+    </form>
+</div>
+</div>
+<script src="events.js"></script>
+</body>
+</html>
